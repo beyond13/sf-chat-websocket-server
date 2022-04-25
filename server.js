@@ -25,6 +25,7 @@ io.on('connection', (socket) => {
   }
 
   socket.on('transmit', () => {
+    console.log('emit_chatupdated');
     io.emit('chatupdated');
   });
 
